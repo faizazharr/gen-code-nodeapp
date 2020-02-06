@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/isi/" method="post">
+    <div>
+        depan <input id="first" name="depan" type="text">
+    </div>
+    <div>
+        belakang <input id="last" name="belakang" type="text">
+    </div>
+    <div>
+        panjang <input id="isi" name="isi" type="number">
+    </div>
+    <div>
+        jumlah <input id="jumlah" name="jumlah" type="number">
+    </div>
+    
+    <%# <button onclick="abjad(document.getElementById('isi').value,document.getElementById('jumlah').value,document.getElementById('first').value,document.getElementById('last').value)">ABJAD</button>
+    <button onclick="number(document.getElementById('isi').value,document.getElementById('jumlah').value,document.getElementById('first').value,document.getElementById('last').value)">NUMBER</button>
+    <button onclick="abjadnum(document.getElementById('isi').value,document.getElementById('jumlah').value,document.getElementById('first').value,document.getElementById('last').value)">ABJADNUM UPPER</button> %>
+    
+    <button name="pilihan" value="number" type="submit">Number</button>
+    <button name="pilihan" value="abjad" type="submit">Abjad</button>
+    <button name="pilihan" value="numabjad" type="submit">NumAbjad</button>
+    
+    </form>
+    <div id="sum"></div>
+    <div id="coba"></div>
+    
+    <form action="/try/" method="post">
+        <button type="submit">coba</button>
+    </form>
+    <form action="/permut/" method="post">
+        <button type="submit">coba</button>
+    </form>
+
+    <script src="js/coba.js"></script>
+</body>
+</html>
